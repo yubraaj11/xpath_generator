@@ -1,0 +1,15 @@
+name,LocatorName,LocatorValue,LocatorType
+meta,name,//meta[@name='viewport'],XPath
+link,type,//link[@type='image/x-icon'],XPath
+style,type,//style[@type='text/css'],XPath
+router-outlet,name,//router-outlet[@name='slider'],XPath
+router-outlet,name,//router-outlet[@name='bot'],XPath
+router-outlet,name,//router-outlet[@name='primary'],XPath
+input,id,//input[@id='emailInput'],XPath
+input,id,//input[@id='passwordInputField'],XPath
+input,id,//input[@id='binary'],XPath
+p-button,id,//p-button[@id='login-button'],XPath
+button,type,//button[@type='submit'],XPath
+script,type,//script[@type='module'],XPath
+script,type,//script[@type='module'],XPath
+script,type,//script[@type='module'],XPath
