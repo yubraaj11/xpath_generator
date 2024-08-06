@@ -5,6 +5,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 def get_element_xpath(element):
@@ -40,7 +43,7 @@ def main():
     driver = webdriver.Chrome()
     try:
         driver.maximize_window()
-        driver.get("http://51.20.64.81/#/employee")  # Replace with your target URL
+        driver.get(os.getenv("LINK"))  # Replace with your target URL
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         time.sleep(3)  # Wait for the page to load completely
 
