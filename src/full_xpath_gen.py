@@ -1,49 +1,10 @@
-# from selenium import webdriver
-# from selenium.webdriver.common.by import By
-# 
-# 
-# def get_xpath(element):
-#     components = []
-#     child = element
-# 
-#     # Traverse the tree from the element to the <body> tag
-#     while child.tag_name.lower() != 'body':
-#         parent = child.find_element(By.XPATH, '..')
-#         siblings = parent.find_elements(By.XPATH, f"./{child.tag_name}")
-#         index = siblings.index(child) + 1 if len(siblings) > 1 else ''
-# 
-#         # Add the tag and index to the components
-#         components.append(f"{child.tag_name}[{index}]" if index else child.tag_name)
-#         child = parent
-# 
-#     # Add the 'body' tag to the XPath
-#     components.append('body')
-#     components.reverse()
-#     return '/html/' + '/'.join(components)
-# 
-# 
-# def find_all_elements(driver, tag='*'):
-#     # Finds all elements of the specified tag within the <body>
-#     return driver.find_elements(By.XPATH, f"//body//{tag}")
-# 
-# 
-# # Example usage
-# driver = webdriver.Chrome()  # Ensure you have the correct driver setup
-# driver.get('http://51.20.64.81/#/employee')  # Replace with the URL of your page
-# 
-# # Find all elements inside the body tag
-# elements = find_all_elements(driver)
-# 
-# # Generate and print XPath for each element
-# for element in elements:
-#     xpath = get_xpath(element)
-#     print(xpath)
-# 
-# driver.quit()
+import os
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from dotenv import load_dotenv
 
+load_dotenv()
 
 def get_xpath(element):
     components = []
@@ -74,7 +35,7 @@ def find_all_elements_with_xpath(driver, tag='*'):
 
 # Example usage
 driver = webdriver.Chrome()  # Ensure you have the correct driver setup
-driver.get('http://51.20.64.81/#/employee')  # Replace with the URL of your page
+driver.get(os.getenv('LINK'))  # Replace with the URL of your page
 
 # Get all elements inside the body tag with their tag name and XPath
 elements_with_xpaths = find_all_elements_with_xpath(driver)
