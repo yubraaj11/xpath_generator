@@ -32,7 +32,7 @@ def get_full_xpath(element):
 
 def get_element_xpath(element):
     tag = element.tag_name
-    attributes = ["id", "placeholder", "name", "type"]
+    attributes = ["id", "placeholder", "name"]
 
     # Check for common attributes
     for attr in attributes:
@@ -41,11 +41,11 @@ def get_element_xpath(element):
             return tag, attr, attr_value, f"//{tag}[@{attr}='{attr_value}']"
 
     # Check if element has text content and use it for XPath
-    if tag.lower() == 'button':
+    if tag.lower() == 'button' or tag.lower() == 'a':
         text_content = element.text.strip()
         if text_content:
             # Shorten text for XPath to avoid overly specific matches
-            truncated_text = text_content if len(text_content) <= 40 else text_content[:40] + '...'
+            truncated_text = text_content if len(text_content) <= 20 else text_content[:20] + '...'
             return tag, "text", truncated_text, f"//{tag}[contains(text(), '{truncated_text}')]"
 
     # If no attributes or text, generate the full XPath
@@ -59,7 +59,7 @@ def collect_xpaths(driver):
     return xpaths
 
 
-def save_to_csv(data, filename="../csv/XPATHS.csv"):
+def save_to_csv(data, filename="../csv/XPATHS_db.csv"):
     try:
         os.makedirs(os.path.dirname(filename), exist_ok=True)
         with open(filename, mode='w', newline='', encoding='utf-8') as file:
@@ -76,7 +76,7 @@ def main():
     driver = webdriver.Chrome()  # Make sure you have the ChromeDriver in your PATH
     try:
         driver.maximize_window()
-        driver.get(os.getenv('LINK'))  # Replace with your target URL
+        driver.get(os.getenv('DB'))  # Replace with your target URL
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         time.sleep(3)  # Wait for the page to load completely
 
