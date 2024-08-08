@@ -55,14 +55,11 @@ class GPTVision:
         try:
             response = requests.post(self.OPENAI_API_ENDPOINT, headers=headers, json=payload)
 
-            # Check the response status code
             if response.status_code != 200:
                 return f"API request failed with status code {response.status_code}: {response.text}"
 
-            # Print the raw response for debugging
             print("Raw response:", response.text)
 
-            # Attempt to parse the JSON response
             try:
                 openai_response = response.json()
                 # Extract the 'content' from the response
