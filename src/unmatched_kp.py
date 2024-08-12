@@ -57,7 +57,7 @@ def find_and_draw_differences(img1_path, img2_path):
     plt.imshow(cv2.cvtColor(img2_with_matched, cv2.COLOR_BGR2RGB))
     plt.title('matched Keypoints in Image 2')
     plt.axis('off')
-    plt.savefig('../output_image/matched.jpg')
+    plt.savefig('../output_image/matched_2.jpg')
 
     # Unmatched keypoints
     img1_with_unmatched = draw_keypoints(img1, unmatched_kp2, color=(0, 0, 255))
@@ -74,11 +74,11 @@ def find_and_draw_differences(img1_path, img2_path):
     plt.imshow(cv2.cvtColor(img2_with_unmatched, cv2.COLOR_BGR2RGB))
     plt.title('Unmatched Keypoints in Image 2')
     plt.axis('off')
-    plt.savefig('../output_image/unmatched.jpg')
+    plt.savefig('../output_image/unmatched_2.jpg')
 
     plt.show()
 
 
 # Example usage
-find_and_draw_differences('/home/yubraj/Documents/vertex-projects/omniglue/res/ss3.png',
-                          '/home/yubraj/Documents/vertex-projects/omniglue/res/ss4.png')
+find_and_draw_differences('/home/yubraj/Documents/vertex-projects/omniglue/res/ss4.png',
+                          '/home/yubraj/Documents/vertex-projects/omniglue/res/ss6.png')
