@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from dotenv import load_dotenv
+from utils.text_preprocessing import format_, format_text
 
 load_dotenv()
 
@@ -20,18 +21,8 @@ def get_element_xpath(element):
     for attr in attributes:
         attr_value = element.get_attribute(attr)
         if attr_value:
-            return tag, attr, attr_value, f"//{tag}[@{attr}='{attr_value}']"
-
-    # # Check if element has text content and use it for XPath
-    # if tag.lower() == 'button' or tag.lower() == 'a':
-    #     text_content = element.text.strip()
-    #     if text_content:
-    #         # Shorten text for XPath to avoid overly specific matches
-    #         truncated_text = text_content if len(text_content) <= 20 else text_content[:20] + '...'
-    #         return tag, "text", truncated_text, f"//{tag}[contains(text(), '{truncated_text}')]"
-    #
-    # # Return None if no suitable locator is found
-    # return None
+            attr_val = format_text(attr_value)
+            return tag, attr, attr_val, f"//{tag}[@{attr}='{attr_value}']"
 
     if tag.lower() == 'button' or tag.lower() == 'a':
         # Attempt to retrieve only the direct text node content within the button or anchor
@@ -42,6 +33,7 @@ def get_element_xpath(element):
         if direct_text:
             # Shorten text for XPath to avoid overly specific matches
             truncated_text = direct_text if len(direct_text) <= 20 else direct_text[:20] + '...'
+            truncated_text = format_(truncated_text)
             return tag, "text", truncated_text, f"//{tag}[contains(text(), '{truncated_text}')]"
 
     # Return None if no suitable locator is found
@@ -56,7 +48,7 @@ def collect_xpaths(driver):
     return xpaths
 
 
-def save_to_csv(data, filename="../csv/RATIONAL_attr_text.csv"):
+def save_to_csv(data, filename="../csv/RATIONAL_LOGIN_UI.csv"):
     try:
         os.makedirs(os.path.dirname(filename), exist_ok=True)
         with open(filename, mode='w', newline='', encoding='utf-8') as file:
@@ -72,7 +64,7 @@ def save_to_csv(data, filename="../csv/RATIONAL_attr_text.csv"):
 def main():
     try:
         driver.maximize_window()
-        driver.get(os.getenv('LINK'))  # Replace with your target URL
+        driver.get(os.getenv('RATIONAL'))  # Replace with your target URL
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         time.sleep(3)  # Wait for the page to load completely
 
