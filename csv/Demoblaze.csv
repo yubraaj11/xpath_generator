@@ -1,0 +1,138 @@
+LocatorName,LocatorValue,LocatorType
+exampleModal,//div[@id='exampleModal'],Xpath
+exampleModalLabel,//h5[@id='exampleModalLabel'],Xpath
+recipient_email,//input[@id='recipient-email'],Xpath
+recipient_name,//input[@id='recipient-name'],Xpath
+message_text,//textarea[@id='message-text'],Xpath
+Close,"//button[contains(text(), 'Close')]",Xpath
+SendMessage,"//button[contains(text(), 'SendMessage')]",Xpath
+signInModal,//div[@id='signInModal'],Xpath
+signInModalLabel,//h5[@id='signInModalLabel'],Xpath
+sign_username,//input[@id='sign-username'],Xpath
+sign_password,//input[@id='sign-password'],Xpath
+errors,//label[@id='errors'],Xpath
+Close,"//button[contains(text(), 'Close')]",Xpath
+SignUp,"//button[contains(text(), 'SignUp')]",Xpath
+logInModal,//div[@id='logInModal'],Xpath
+logInModalLabel,//h5[@id='logInModalLabel'],Xpath
+loginusername,//input[@id='loginusername'],Xpath
+loginpassword,//input[@id='loginpassword'],Xpath
+errorl,//label[@id='errorl'],Xpath
+Close,"//button[contains(text(), 'Close')]",Xpath
+LogIn,"//button[contains(text(), 'LogIn')]",Xpath
+videoModal,//div[@id='videoModal'],Xpath
+videoModalLabel,//h5[@id='videoModalLabel'],Xpath
+example_video,//div[@id='example-video'],Xpath
+example_video_html5_api,//video[@id='example-video_html5_api'],Xpath
+example_video_component_425_description,//p[@id='example-video_component_425_description'],Xpath
+example_video_component_430_description,//p[@id='example-video_component_430_description'],Xpath
+captions_text_legend_example_video_component_430,//legend[@id='captions-text-legend-example-video_component_430'],Xpath
+captions_foreground_color_example_video_component_430,//label[@id='captions-foreground-color-example-video_component_430'],Xpath
+captions_foreground_color_example_video_component_430_White,//option[@id='captions-foreground-color-example-video_component_430-White'],Xpath
+captions_foreground_color_example_video_component_430_Black,//option[@id='captions-foreground-color-example-video_component_430-Black'],Xpath
+captions_foreground_color_example_video_component_430_Red,//option[@id='captions-foreground-color-example-video_component_430-Red'],Xpath
+captions_foreground_color_example_video_component_430_Green,//option[@id='captions-foreground-color-example-video_component_430-Green'],Xpath
+captions_foreground_color_example_video_component_430_Blue,//option[@id='captions-foreground-color-example-video_component_430-Blue'],Xpath
+captions_foreground_color_example_video_component_430_Yellow,//option[@id='captions-foreground-color-example-video_component_430-Yellow'],Xpath
+captions_foreground_color_example_video_component_430_Magenta,//option[@id='captions-foreground-color-example-video_component_430-Magenta'],Xpath
+captions_foreground_color_example_video_component_430_Cyan,//option[@id='captions-foreground-color-example-video_component_430-Cyan'],Xpath
+captions_foreground_opacity_example_video_component_430,//label[@id='captions-foreground-opacity-example-video_component_430'],Xpath
+captions_foreground_opacity_example_video_component_430_Opaque,//option[@id='captions-foreground-opacity-example-video_component_430-Opaque'],Xpath
+captions_foreground_opacity_example_video_component_430_SemiTransparent,//option[@id='captions-foreground-opacity-example-video_component_430-SemiTransparent'],Xpath
+captions_background_example_video_component_430,//legend[@id='captions-background-example-video_component_430'],Xpath
+captions_background_color_example_video_component_430,//label[@id='captions-background-color-example-video_component_430'],Xpath
+captions_background_color_example_video_component_430_Black,//option[@id='captions-background-color-example-video_component_430-Black'],Xpath
+captions_background_color_example_video_component_430_White,//option[@id='captions-background-color-example-video_component_430-White'],Xpath
+captions_background_color_example_video_component_430_Red,//option[@id='captions-background-color-example-video_component_430-Red'],Xpath
+captions_background_color_example_video_component_430_Green,//option[@id='captions-background-color-example-video_component_430-Green'],Xpath
+captions_background_color_example_video_component_430_Blue,//option[@id='captions-background-color-example-video_component_430-Blue'],Xpath
+captions_background_color_example_video_component_430_Yellow,//option[@id='captions-background-color-example-video_component_430-Yellow'],Xpath
+captions_background_color_example_video_component_430_Magenta,//option[@id='captions-background-color-example-video_component_430-Magenta'],Xpath
+captions_background_color_example_video_component_430_Cyan,//option[@id='captions-background-color-example-video_component_430-Cyan'],Xpath
+captions_background_opacity_example_video_component_430,//label[@id='captions-background-opacity-example-video_component_430'],Xpath
+captions_background_opacity_example_video_component_430_Opaque,//option[@id='captions-background-opacity-example-video_component_430-Opaque'],Xpath
+captions_background_opacity_example_video_component_430_SemiTransparent,//option[@id='captions-background-opacity-example-video_component_430-SemiTransparent'],Xpath
+captions_background_opacity_example_video_component_430_Transparent,//option[@id='captions-background-opacity-example-video_component_430-Transparent'],Xpath
+captions_window_example_video_component_430,//legend[@id='captions-window-example-video_component_430'],Xpath
+captions_window_color_example_video_component_430,//label[@id='captions-window-color-example-video_component_430'],Xpath
+captions_window_color_example_video_component_430_Black,//option[@id='captions-window-color-example-video_component_430-Black'],Xpath
+captions_window_color_example_video_component_430_White,//option[@id='captions-window-color-example-video_component_430-White'],Xpath
+captions_window_color_example_video_component_430_Red,//option[@id='captions-window-color-example-video_component_430-Red'],Xpath
+captions_window_color_example_video_component_430_Green,//option[@id='captions-window-color-example-video_component_430-Green'],Xpath
+captions_window_color_example_video_component_430_Blue,//option[@id='captions-window-color-example-video_component_430-Blue'],Xpath
+captions_window_color_example_video_component_430_Yellow,//option[@id='captions-window-color-example-video_component_430-Yellow'],Xpath
+captions_window_color_example_video_component_430_Magenta,//option[@id='captions-window-color-example-video_component_430-Magenta'],Xpath
+captions_window_color_example_video_component_430_Cyan,//option[@id='captions-window-color-example-video_component_430-Cyan'],Xpath
+captions_window_opacity_example_video_component_430,//label[@id='captions-window-opacity-example-video_component_430'],Xpath
+captions_window_opacity_example_video_component_430_Transparent,//option[@id='captions-window-opacity-example-video_component_430-Transparent'],Xpath
+captions_window_opacity_example_video_component_430_SemiTransparent,//option[@id='captions-window-opacity-example-video_component_430-SemiTransparent'],Xpath
+captions_window_opacity_example_video_component_430_Opaque,//option[@id='captions-window-opacity-example-video_component_430-Opaque'],Xpath
+captions_font_size_example_video_component_430,//legend[@id='captions-font-size-example-video_component_430'],Xpath
+captions_font_size_example_video_component_430_50,//option[@id='captions-font-size-example-video_component_430-50'],Xpath
+captions_font_size_example_video_component_430_75,//option[@id='captions-font-size-example-video_component_430-75'],Xpath
+captions_font_size_example_video_component_430_100,//option[@id='captions-font-size-example-video_component_430-100'],Xpath
+captions_font_size_example_video_component_430_125,//option[@id='captions-font-size-example-video_component_430-125'],Xpath
+captions_font_size_example_video_component_430_150,//option[@id='captions-font-size-example-video_component_430-150'],Xpath
+captions_font_size_example_video_component_430_175,//option[@id='captions-font-size-example-video_component_430-175'],Xpath
+captions_font_size_example_video_component_430_200,//option[@id='captions-font-size-example-video_component_430-200'],Xpath
+captions_font_size_example_video_component_430_300,//option[@id='captions-font-size-example-video_component_430-300'],Xpath
+captions_font_size_example_video_component_430_400,//option[@id='captions-font-size-example-video_component_430-400'],Xpath
+example_video_component_430,//legend[@id='example-video_component_430'],Xpath
+example_video_component_430_None,//option[@id='example-video_component_430-None'],Xpath
+example_video_component_430_Raised,//option[@id='example-video_component_430-Raised'],Xpath
+example_video_component_430_Depressed,//option[@id='example-video_component_430-Depressed'],Xpath
+example_video_component_430_Uniform,//option[@id='example-video_component_430-Uniform'],Xpath
+example_video_component_430_Dropshadow,//option[@id='example-video_component_430-Dropshadow'],Xpath
+captions_font_family_example_video_component_430,//legend[@id='captions-font-family-example-video_component_430'],Xpath
+captions_font_family_example_video_component_430_ProportionalSansSerif,//option[@id='captions-font-family-example-video_component_430-ProportionalSansSerif'],Xpath
+captions_font_family_example_video_component_430_MonospaceSansSerif,//option[@id='captions-font-family-example-video_component_430-MonospaceSansSerif'],Xpath
+captions_font_family_example_video_component_430_ProportionalSerif,//option[@id='captions-font-family-example-video_component_430-ProportionalSerif'],Xpath
+captions_font_family_example_video_component_430_MonospaceSerif,//option[@id='captions-font-family-example-video_component_430-MonospaceSerif'],Xpath
+captions_font_family_example_video_component_430_Casual,//option[@id='captions-font-family-example-video_component_430-Casual'],Xpath
+captions_font_family_example_video_component_430_Script,//option[@id='captions-font-family-example-video_component_430-Script'],Xpath
+captions_font_family_example_video_component_430_SmallCaps,//option[@id='captions-font-family-example-video_component_430-SmallCaps'],Xpath
+Reset,"//button[contains(text(), 'Reset')]",Xpath
+Done,"//button[contains(text(), 'Done')]",Xpath
+Close,"//button[contains(text(), 'Close')]",Xpath
+narvbarx,//nav[@id='narvbarx'],Xpath
+nava,//a[@id='nava'],Xpath
+navbarExample,//div[@id='navbarExample'],Xpath
+Home,"//a[contains(text(), 'Home')]",Xpath
+Contact,"//a[contains(text(), 'Contact')]",Xpath
+AboutUs,"//a[contains(text(), 'AboutUs')]",Xpath
+cartur,//a[@id='cartur'],Xpath
+login2,//a[@id='login2'],Xpath
+logout2,//a[@id='logout2'],Xpath
+nameofuser,//a[@id='nameofuser'],Xpath
+signin2,//a[@id='signin2'],Xpath
+contcar,//div[@id='contcar'],Xpath
+carouselExampleIndicators,//div[@id='carouselExampleIndicators'],Xpath
+contcont,//div[@id='contcont'],Xpath
+cat,//a[@id='cat'],Xpath
+itemc,//a[@id='itemc'],Xpath
+itemc,//a[@id='itemc'],Xpath
+itemc,//a[@id='itemc'],Xpath
+tbodyid,//div[@id='tbodyid'],Xpath
+SamsungGalaxyS6,"//a[contains(text(), 'SamsungGalaxyS6')]",Xpath
+article,//p[@id='article'],Xpath
+NokiaLumia1520,"//a[contains(text(), 'NokiaLumia1520')]",Xpath
+article,//p[@id='article'],Xpath
+Nexus6,"//a[contains(text(), 'Nexus6')]",Xpath
+article,//p[@id='article'],Xpath
+SamsungGalaxyS7,"//a[contains(text(), 'SamsungGalaxyS7')]",Xpath
+article,//p[@id='article'],Xpath
+Iphone632gb,"//a[contains(text(), 'Iphone632gb')]",Xpath
+article,//p[@id='article'],Xpath
+SonyXperiaZ5,"//a[contains(text(), 'SonyXperiaZ5')]",Xpath
+article,//p[@id='article'],Xpath
+HTCOneM9,"//a[contains(text(), 'HTCOneM9')]",Xpath
+article,//p[@id='article'],Xpath
+SonyVaioI5,"//a[contains(text(), 'SonyVaioI5')]",Xpath
+article,//p[@id='article'],Xpath
+SonyVaioI7,"//a[contains(text(), 'SonyVaioI7')]",Xpath
+article,//p[@id='article'],Xpath
+frm,//form[@id='frm'],Xpath
+prev2,//button[@id='prev2'],Xpath
+next2,//button[@id='next2'],Xpath
+footc,//div[@id='footc'],Xpath
+fotcont,//div[@id='fotcont'],Xpath

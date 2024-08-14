@@ -1,0 +1,8 @@
+LocatorName,LocatorValue,LocatorType
+slider,//router-outlet[@name='slider'],Xpath
+bot,//router-outlet[@name='bot'],Xpath
+primary,//router-outlet[@name='primary'],Xpath
+emailInput,//input[@id='emailInput'],Xpath
+passwordInputField,//input[@id='passwordInputField'],Xpath
+binary,//input[@id='binary'],Xpath
+login_button,//p-button[@id='login-button'],Xpath
