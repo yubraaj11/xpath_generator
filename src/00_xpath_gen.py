@@ -59,7 +59,7 @@ def collect_xpaths(driver):
     return xpaths
 
 
-def save_to_csv(data, filename="../csv/XPATHS_DEMO.csv"):
+def save_to_csv(data, filename="../csv/RATIONAL.csv"):
     try:
         os.makedirs(os.path.dirname(filename), exist_ok=True)
         with open(filename, mode='w', newline='', encoding='utf-8') as file:
@@ -76,7 +76,7 @@ def main():
     driver = webdriver.Chrome()  # Make sure you have the ChromeDriver in your PATH
     try:
         driver.maximize_window()
-        driver.get(os.getenv('DEMO'))  # Replace with your target URL
+        driver.get(os.getenv('LINK'))  # Replace with your target URL
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         time.sleep(3)  # Wait for the page to load completely
 
